@@ -101,3 +101,24 @@ var typed = new Typed('.typing', {
   typeSpeed: 80,
   backSpeed: 40
 });
+
+
+// --- Dark Mode Toggle ---
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+
+function setIcon(isDark) {
+  themeIcon.setAttribute('data-lucide', isDark ? 'sun' : 'moon');
+  lucide.createIcons();
+}
+
+if (localStorage.getItem('darkMode') === 'true') {
+  document.body.classList.add('dark-mode');
+  setIcon(true);
+}
+
+themeToggle.addEventListener('click', () => {
+  const isDark = document.body.classList.toggle('dark-mode');
+  setIcon(isDark);
+  localStorage.setItem('darkMode', isDark);
+});

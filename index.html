@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <title>Daria Karakalchev: Portfolio Website</title>
   <script src="https://unpkg.com/lucide@latest"></script>
   <meta name="description" content="Daria Karakalchev: Portfolio Website" />
@@ -21,15 +21,13 @@
     </div>
     <nav class="main-header__navigation">
       <ul class="main-header__navigation-links">
-        <li class="main-header__navigation-link"><a href="./index.html#about"> ABOUT </a></li>
-        <li class="main-header__navigation-link">
-          <a href="./index.html#projects"> PROJECTS </a>
-        </li>
-        <li class="main-header__navigation-link"><a href="./index.html#contact" href=""> CONTACT </a></li>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-  <i id="themeIcon" data-lucide="moon" style="width:22px;height:22px;"></i>
-</button>
-      </ul>
+  <li class="main-header__navigation-link"><a href="./index.html#about"> ABOUT </a></li>
+  <li class="main-header__navigation-link"><a href="./index.html#projects"> PROJECTS </a></li>
+  <li class="main-header__navigation-link"><a href="./index.html#contact"> CONTACT </a></li>
+  <li>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
+  </li>
+</ul>
     </nav>
     <div class="main-header__sm-scr-nav-btn">
       <div class="main-header__sm-scr-nav-btn-line"></div>
@@ -73,9 +71,14 @@
             I'm Daria Karakalchev! A <span class="typing"></span>
           </span>
         </h1>
-        <button class="btn btn-theme home-hero__btn-theme">
-          <a href="./index.html#projects"> Projects </a>
-        </button>
+        <div class="home-hero__socials">
+  <a href="https://github.com/Daria-Kara" class="home-hero__social-link">
+    <img src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png" alt="GitHub" class="home-hero__social-link-icon" />
+  </a>
+  <a href="https://www.linkedin.com/in/daria-karakalchev-029147395/" class="home-hero__social-link">
+    <img src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png" alt="LinkedIn" class="home-hero__social-link-icon" />
+  </a>
+</div>
       </div>
     </div>
   </section>
@@ -92,32 +95,95 @@
         <div class="about__info">
           <div class="about__main-info">
             <h3 class="heading-quaternary about__heading-quaternary">
-              My Story
+              Languages
             </h3>
-            <p class="text-primary about__text-primary">
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
-                magni saepe veritatis voluptatum alias fugit. Explicabo
-                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
-                sit amet
-              </span>
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
-                magni saepe veritatis voluptatum alias fugit. Explicabo
-                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
-                sit amet
-              </span>
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
-                magni saepe veritatis voluptatum alias fugit. Explicabo
-                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
-                sit amet
-              </span>
-            </p>
-            <button class="btn btn-theme about__btn-theme">Projects</button>
+     <ul class="about__languages">
+  <li class="about__language">
+    <span class="about__language-name">Turkish</span>
+    <div class="about__language-bars">
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar about__language-bar--filled"></span>
+    </div>
+    <span class="about__language-level">C2</span>
+  </li>
+  <li class="about__language">
+    <span class="about__language-name">Russian</span>
+    <div class="about__language-bars">
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar"></span>
+    </div>
+    <span class="about__language-level">C1</span>
+  </li>
+  <li class="about__language">
+    <span class="about__language-name">English</span>
+    <div class="about__language-bars">
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar"></span>
+    </div>
+    <span class="about__language-level">C1</span>
+  </li>
+  <li class="about__language">
+    <span class="about__language-name">German</span>
+    <div class="about__language-bars">
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar"></span>
+      <span class="about__language-bar"></span>
+      <span class="about__language-bar"></span>
+      <span class="about__language-bar"></span>
+    </div>
+    <span class="about__language-level">A2</span>
+  </li>
+  <li class="about__language">
+    <span class="about__language-name">Japanese</span>
+    <div class="about__language-bars">
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar"></span>
+      <span class="about__language-bar"></span>
+      <span class="about__language-bar"></span>
+      <span class="about__language-bar"></span>
+    </div>
+    <span class="about__language-level">A2</span>
+  </li>
+  <li class="about__language">
+    <span class="about__language-name">French</span>
+    <div class="about__language-bars">
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar"></span>
+      <span class="about__language-bar"></span>
+      <span class="about__language-bar"></span>
+      <span class="about__language-bar"></span>
+      <span class="about__language-bar"></span>
+    </div>
+    <span class="about__language-level">A1</span>
+  </li>
+  <li class="about__language">
+    <span class="about__language-name">Spanish</span>
+    <div class="about__language-bars">
+      <span class="about__language-bar about__language-bar--filled"></span>
+      <span class="about__language-bar"></span>
+      <span class="about__language-bar"></span>
+      <span class="about__language-bar"></span>
+      <span class="about__language-bar"></span>
+      <span class="about__language-bar"></span>
+    </div>
+    <span class="about__language-level">A1</span>
+  </li>
+</ul>
+
           </div>
           <div class="about__skill-info">
             <h3 class="heading-quaternary about__heading-quaternary">
@@ -134,51 +200,42 @@
               <li class="about__skill">Git</li>
               <li class="about__skill">Vscode</li>
             </ul>
-          </div>
+        </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="skills-showcase">
-    <ul class="skills-showcase__list">
-      <li class="skills-showcase__list-item">
-        <i class="devicon-html5-plain"></i>
-      </li>
-      <li class="skills-showcase__list-item">
-        <i class="devicon-css3-plain"></i>
-      </li>
-      <li class="skills-showcase__list-item">
-        <i class="devicon-javascript-plain"></i>
-      </li>
-      <li class="skills-showcase__list-item">
-        <i class="devicon-react-original"></i>
-      </li>
-      <li class="skills-showcase__list-item">
-        <i class="devicon-sass-original"></i>
-      </li>
-      <li class="skills-showcase__list-item">
-        <i class="devicon-nodejs-plain"></i>
-      </li>
-      <li class="skills-showcase__list-item">
-        <i class="devicon-git-plain"></i>
-      </li>
-
-      <li class="skills-showcase__list-item">
-        <i class="devicon-android-plain"></i>
-      </li>
-      <li class="skills-showcase__list-item">
-        <i class="devicon-python-plain"></i>
-      </li>
-    </ul>
+ <section class="skills-showcase">
+  <ul class="skills-showcase__list">
+    <li class="skills-showcase__list-item">
+      <i class="devicon-python-plain"></i>
+      <span class="skills-showcase__label"></span>
+    </li>
+    <li class="skills-showcase__list-item">
+      <i class="devicon-css3-plain"></i>
+      <span class="skills-showcase__label"></span>
+    </li>
+    <li class="skills-showcase__list-item">
+      <i class="devicon-html5-plain"></i>
+      <span class="skills-showcase__label"></span>
+    </li>
+    <li class="skills-showcase__list-item">
+      <i class="devicon-javascript-plain"></i>
+      <span class="skills-showcase__label"></span>
+    </li>
+    <li class="skills-showcase__list-item">
+      <i class="devicon-vscode-plain"></i>
+      <span class="skills- showcase__label"></span>
+    </li>
+  </ul>
   </section>
+
   <section id="projects" class="projects main-section">
     <div class="main-container">
       <h2 class="heading-secondary projects__heading-secondary">
-        <span class="heading-secondary__sm"> Projects </span>
-        <span class="heading-secondary__main">
-          Here you will find some of the personal and clients projects that I created with the project details
-        </span>
+        <span> Experiences </span>
       </h2>
+              <div class="main-footer__mid-line"></div>
       <div class="main-section__content">
         <div class="projects__list">
           <div class="projects__list-item">
@@ -188,62 +245,53 @@
               <span class="projects__list-item-count-end-dot"> </span>
             </div>
             <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
-              </div>
               <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
+                Technical and Customer Operations Intern
               </h3>
               <hr class="projects__title-text-divider" /> 
 
               <p class="text-primary projects__list-item-text-primary">
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
+                  Whale Tourism, Antalya <br />
+                  July 2023 - June 2025
                 </span>
                 <br />
                 <br /> 
                 <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
+                   - Provided <strong>trilingual</strong> (English, Turkish, Russian) customer service for international clients, settling queries and improving satisfaction.
+                    <br />
+                    - Helped in materials management and <strong>data entry</strong>, developing organisational skills.
                 </span>
               </p>
-              <button class="btn btn-theme projects__btn-theme">
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+              <a href="https://maps.app.goo.gl/WLid8BdGkR1ZooLA9" target="_blank">
+  <button class="btn btn-theme projects__btn-theme">
+    Google Maps Link
+  </button>
+</a>
             </div>
           </div>
           <div class="projects__list-item projects__list-item--inv">
             <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
-              </div>
               <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
+                Python Programming
               </h3>
               <hr class="projects__title-text-divider" /> 
 
               <p class="text-primary projects__list-item-text-primary">
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
+                  Coursera, Google <br />
+                  July 2024
                 </span>
                 <br />
                 <br /> 
                 <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
+                  - Actively pariticipated and finished assignments for the Crash Course on Python, covering the basics of <strong>Python Programming</strong>.
                 </span>
               </p>
-              <button class="btn btn-theme projects__btn-theme">
-                Live Link
+              <a href="https://www.coursera.org/learn/python-crash-course" target="_blank"> <button class="btn btn-theme projects__btn-theme">
+                Course Link
               </button>
-              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+              </a>
             </div>
             <div class="projects__list-item-count">
               <span class="projects__list-item-count-num"> 2 </span>
@@ -258,73 +306,137 @@
               <span class="projects__list-item-count-end-dot"> </span>
             </div>
             <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
-              </div>
               <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
+                Private Tutor - Turkish Language
               </h3>
               <hr class="projects__title-text-divider" /> 
 
               <p class="text-primary projects__list-item-text-primary">
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
+                  Freelance <br />
+                  November 2021 – April 2022
                 </span>
                 <br />
                 <br /> 
                 <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
+                  - Created <strong>personally tailored</strong> lessons for two elementary school students, improving not only their grammar but also their conversational fluency in the Turkish language.
                 </span>
               </p>
-              <button class="btn btn-theme projects__btn-theme">
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">Code Link</button>
-            </div>
-          </div>
-          <div class="projects__list-item projects__list-item--inv">
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
-              </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
-              </h3>
-              <hr class="projects__title-text-divider" /> 
-
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
-                </span>
-                <br />
-                <br /> 
-                <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
-                </span>
-              </p>
-              <button class="btn btn-theme projects__btn-theme">
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">Code Link</button>
-            </div>
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 4 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!--Section Divider is here-->
+        <div class="projects__section-divider">
+          <hr class="projects__section-line" />
+        </div>
+
+
+
+
+  <section id="projects" class="projects main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span> Projects </span>
+      </h2>
+              <div class="main-footer__mid-line"></div>
+      <div class="main-section__content">
+        <div class="projects__list">
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 1 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <div class="projects__list-item-details">
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Technical and Customer Operations Intern
+              </h3>
+              <hr class="projects__title-text-divider" /> 
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Whale Tourism, Antalya <br />
+                  July 2023 - June 2025
+                </span>
+                <br />
+                <br /> 
+                <span>
+                   - Provided <strong>trilingual</strong> (English, Turkish, Russian) customer service for international clients, settling queries and improving satisfaction.
+                    <br />
+                    - Helped in materials management and <strong>data entry</strong>, developing organisational skills.
+                </span>
+              </p>
+              <a href="https://maps.app.goo.gl/WLid8BdGkR1ZooLA9" target="_blank">
+  <button class="btn btn-theme projects__btn-theme">
+    Google Maps Link
+  </button>
+</a>
+            </div>
+          </div>
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Python Programming
+              </h3>
+              <hr class="projects__title-text-divider" /> 
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Coursera, Google <br />
+                  July 2024
+                </span>
+                <br />
+                <br /> 
+                <span>
+                  - Actively pariticipated and finished assignments for the Crash Course on Python, covering the basics of <strong>Python Programming</strong>.
+                </span>
+              </p>
+              <a href="https://www.coursera.org/learn/python-crash-course" target="_blank"> <button class="btn btn-theme projects__btn-theme">
+                Course Link
+              </button>
+              </a>
+            </div>
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 2 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+          </div>
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 3 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <div class="projects__list-item-details">
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Private Tutor - Turkish Language
+              </h3>
+              <hr class="projects__title-text-divider" /> 
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Freelance <br />
+                  November 2021 – April 2022
+                </span>
+                <br />
+                <br /> 
+                <span>
+                  - Created <strong>personally tailored</strong> lessons for two elementary school students, improving not only their grammar but also their conversational fluency in the Turkish language.
+                </span>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+        
+  
   <section id="contact" class="contact main-section">
     <div class="main-container">
       <h2 class="heading-secondary">
@@ -375,24 +487,15 @@
         </ul>
         <div class="main-footer__mid-line"></div>
         <div class="main-footer__socials">
-          <a href="#" class="main-footer__social-link">
+          <a href="https://github.com/Daria-Kara" class="main-footer__social-link">
             <img
               src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
-              alt="" class="main-footer__social-link-icon" />
+              alt="https://github.com/Daria-Kara" class="main-footer__social-link-icon" />
           </a>
-          <a href="#" class="main-footer__social-link">
-            <img src="./assets/icons8-instagram-48.png" alt="" class="main-footer__social-link-icon" />
-          </a>
-          <a href="#" class="main-footer__social-link">
-            <img src="./assets/icons8-twitter-50.png" alt="" class="main-footer__social-link-icon" />
-          </a>
-          <a href="#" class="main-footer__social-link">
+          <a href="https://www.linkedin.com/in/daria-karakalchev-029147395/" class="main-footer__social-link">
             <img
-              src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
-              alt="" class="main-footer__social-link-icon" />
-          </a>
-          <a href="#" class="main-footer__social-link">
-            <img src="./assets/icons8-pinterest-64.png" alt="" class="main-footer__social-link-icon" />
+            src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
+              alt="https://www.linkedin.com/in/daria-karakalchev-029147395/" class="main-footer__social-link-icon" />
           </a>
         </div>
       </div>

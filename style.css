@@ -791,6 +791,11 @@ body.dark-mode .skills-showcase__label {
   margin-bottom: -4rem;
 }
 
+.qualification__item:last-child .qualification__line {
+  display: none;
+}
+
+
 .qualification__connector {
   display: flex;
   flex-direction: column;

@@ -880,6 +880,7 @@ body.dark-mode .qualification__date {
 }
 
 
+
 /* projects */
 
 .projects__list-item {
@@ -1204,7 +1205,7 @@ body.dark-mode .projects__list-item-details {
 /* Main Footer */
 
 .main-footer__upper {
-  background: #000;
+  background: #f0f0f0;
   padding: 10rem 0;
 }
 
@@ -1217,7 +1218,7 @@ body.dark-mode .projects__list-item-details {
 }
 
 .main-footer__link a {
-  color: #fff;
+  color: #111;
   font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1241,7 +1242,7 @@ body.dark-mode .projects__list-item-details {
 }
 
 .main-footer__mid-line {
-  background: grey;
+  background: #ccc;
   height: 1px;
   margin-top: 6rem;
 }
@@ -1261,11 +1262,11 @@ body.dark-mode .projects__list-item-details {
 
 .main-footer__bottom {
   padding: 5rem 2rem;
-  background: #222;
+  background: #e0e0e0;
 }
 
 .main-footer__bottom-txt {
-  color: #eee;
+  color: #333;
   font-size: 1.3rem;
   word-spacing: 2px;
   text-align: center;
@@ -1273,8 +1274,33 @@ body.dark-mode .projects__list-item-details {
 
 .main-footer__bottom-txt a {
   text-decoration: underline;
-  color: #fff;
+  color: #111;
   font-weight: 700;
+}
+
+/* Footer: dark mode */
+body.dark-mode .main-footer__upper {
+  background: #1a1a1a;
+}
+
+body.dark-mode .main-footer__link a {
+  color: #e0e0e0;
+}
+
+body.dark-mode .main-footer__mid-line {
+  background: #444;
+}
+
+body.dark-mode .main-footer__bottom {
+  background: #111;
+}
+
+body.dark-mode .main-footer__bottom-txt {
+  color: #aaa;
+}
+
+body.dark-mode .main-footer__bottom-txt a {
+  color: #e0e0e0;
 }
 
 
@@ -1455,3 +1481,45 @@ body.dark-mode .home-hero__heading-primary,
 body.dark-mode .home-hero__heading-primary .typing {
   color: #ffffff;
 }
+
+
+
+/* Portfolio Swiper Section */
+.portfolio-swiper {
+  margin-top: 6rem;
+  padding-bottom: 6rem;
+  position: relative;
+}
+
+.portfolio-card {
+  border: 2px solid rgba(var(--themeColor), 1);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+body.dark-mode .portfolio-card {
+  background: #1f1f1f;
+  border-color: rgba(var(--themeColor), 0.7);
+}
+
+
+.portfolio-card__body {
+  padding: 3rem;
+}
+
+.portfolio-card__title {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-card__text {
+  margin-bottom: 2.5rem;
+}
+
+.portfolio-swiper .swiper-button-next,
+.portfolio-swiper .swiper-button-prev {
+  color: rgba(var(--themeColor), 1);
+}
+
+

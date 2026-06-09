@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <title>Daria Karakalchev: Portfolio Website</title>
   <script src="https://unpkg.com/lucide@latest"></script>
   <meta name="description" content="Daria Karakalchev: Portfolio Website" />
@@ -261,6 +262,11 @@
 
 
 
+
+
+  
+
+
  <section class="skills-showcase">
   <ul class="skills-showcase__list">
     <li class="skills-showcase__list-item">
@@ -499,6 +505,85 @@
     </div>
   </section>
 
+
+<div class="projects__section-divider">
+  <hr class="projects__section-line" />
+</div>
+
+<section id="portfolio" class="projects main-section">
+  <div class="main-container">
+    <h2 class="heading-secondary projects__heading-secondary">
+      <span>Python Exercises</span>
+    </h2>
+    <div class="main-footer__mid-line"></div>
+
+    <div class="portfolio-swiper swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="portfolio-card">
+            <div class="portfolio-card__body">
+              <h3 class="heading-tertiary portfolio-card__title">Module and Packages Exercises</h3>
+              <p class="text-primary portfolio-card__text">Created a code in Python for the following exercises: basic calculator, circle, cube etc.</p>
+              <a href="https://github.com/Daria-Kara/python_modules_and_packages_exercises" target="_blank"><button class="btn btn-theme">Exercise Solutions</button></a>
+              <a href="https://github.com/m-mahdavi/teaching/blob/main/exercises/python/modules_and_packages.ipynb" target="_blank"><button class="btn btn-theme">Exercise Link</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="portfolio-card">
+            <div class="portfolio-card__body">
+              <h3 class="heading-tertiary portfolio-card__title">Project Title Two</h3>
+              <p class="text-primary portfolio-card__text">A short description of what this project is and what technologies were used.</p>
+              <a href="#" target="_blank"><button class="btn btn-theme">View Project</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="portfolio-card">
+            <div class="portfolio-card__body">
+              <h3 class="heading-tertiary portfolio-card__title">Project Title Three</h3>
+              <p class="text-primary portfolio-card__text">A short description of what this project is and what technologies were used.</p>
+              <a href="#" target="_blank"><button class="btn btn-theme">View Project</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="portfolio-card">
+            <div class="portfolio-card__body">
+              <h3 class="heading-tertiary portfolio-card__title">Project Title Four</h3>
+              <p class="text-primary portfolio-card__text">A short description of what this project is and what technologies were used.</p>
+              <a href="#" target="_blank"><button class="btn btn-theme">View Project</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="portfolio-card">
+            <div class="portfolio-card__body">
+              <h3 class="heading-tertiary portfolio-card__title">Project Title Five</h3>
+              <p class="text-primary portfolio-card__text">A short description of what this project is and what technologies were used.</p>
+              <a href="#" target="_blank"><button class="btn btn-theme">View Project</button></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
   
   <section id="contact" class="contact main-section">
     <div class="main-container">
@@ -581,6 +666,28 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
   <script src="./script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  new Swiper('.portfolio-swiper', {
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.portfolio-swiper .swiper-button-next',
+      prevEl: '.portfolio-swiper .swiper-button-prev',
+    },
+    pagination: {
+      el: '.portfolio-swiper .swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: { slidesPerView: 1 },
+      1100: { slidesPerView: 1 },
+    }
+  });
+</script>
+
 
 </body>
 

@@ -1487,7 +1487,8 @@ body.dark-mode .home-hero__heading-primary .typing {
 /* Portfolio Swiper Section */
 .portfolio-swiper {
   margin-top: 6rem;
-  padding-bottom: 6rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   position: relative;
 }
 
@@ -1523,3 +1524,27 @@ body.dark-mode .portfolio-card {
 }
 
 
+@media (max-width: 56.25em) {
+  .portfolio-swiper {
+    padding: 0 2rem;
+  }
+}
+
+#portfolio.projects.main-section {
+  padding-top: 6rem;
+  padding-bottom: 0;
+}
+
+.portfolio-card__body .btn {
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+}
+
+.btn-theme:hover {
+  background: rgba(50, 130, 54, 1);
+  border-color: rgba(50, 130, 54, 1);
+}
+
+.contact__form-submit:hover {
+  background: rgba(50, 130, 54, 1);
+}
